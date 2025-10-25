@@ -1,7 +1,7 @@
 //	SEP101 - ASSIGNMENT 1
 //	RealEstateMain.c - main program for the real estate company
 
-//	Daryl Gonzales					Shay Symonnette	
+//	Daryl Gonzales					Shay Symonnette	                  Yevhenii Karaman (Eugene)
 //	dgonzales12@myseneca.ca			
 //	111341251						
 
