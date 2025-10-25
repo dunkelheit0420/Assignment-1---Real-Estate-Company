@@ -14,4 +14,32 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RealEstate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RealEstateMain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RealEstate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Apartments.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Townhouses.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SemiDetachedHouses.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Apartments.txt" />
+    <Text Include="SemiDetachedHouses.txt" />
+    <Text Include="Text.txt" />
+    <Text Include="Townhouses.txt" />
+  </ItemGroup>
 </Project>
