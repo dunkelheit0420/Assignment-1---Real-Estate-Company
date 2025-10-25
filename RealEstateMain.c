@@ -20,8 +20,6 @@ int main(void) {
 	ExtractDataFromFile(&realEstate, APARTMENT_FILE, TOWNHOUSES_FILE, SEMIDETACHED_HOUSES_FILE);
 	printf("%s", realEstate.semiDetachedHouse[0].address);
 	printf("\n");
-	printf(realEstate.apartment[i].monthlyRent);
-	printf("\n");
 	printf(realEstate.apartment[2].address);
 	printf("\n");
 	printf(realEstate.apartment[3].address);
