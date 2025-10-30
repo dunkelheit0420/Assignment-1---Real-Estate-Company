@@ -7,8 +7,11 @@
 
 //	Task Log
 //	22-Oct-25		D. Gonzales		Created Apartments.h file, finished the structure
+//	30-Oct-25		D. Gonzales		Added header guards shown in class
 
-#pragma once
+#ifndef _APARTMENTS_H_
+#define _APARTMENTS_H_
+
 #define MAX_STR 255
 
 struct Apartment {
@@ -23,3 +26,5 @@ struct Apartment {
 	double currentValue;
 	double capitalGains;
 };
+
+#endif

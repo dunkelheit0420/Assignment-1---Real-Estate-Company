@@ -7,8 +7,11 @@
 
 //	Task Log
 //	22-Oct-25		D. Gonzales		Created Townhouses.h file, finished the structure
+//	30-Oct-25		D. Gonzales		Added header guards shown in class
 
-#pragma once
+#ifndef _TOWNHOUSES_H_
+#define _TOWNHOUSES_H_
+
 #define MAX_STR 255
 
 struct Townhouse {
@@ -25,3 +28,5 @@ struct Townhouse {
 	double currentValue;
 	double capitalGains;
 };
+
+#endif

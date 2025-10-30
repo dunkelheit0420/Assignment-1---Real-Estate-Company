@@ -12,11 +12,12 @@
 //									Added comments to explain what each structure does.
 //	22-Oct-25		D. Gonzales		Decided to create separate header files for each property type for clarity
 //	25-Oct-25		D. Gonzales		Added some comments for clarity, now that the extract from file function is fixed.
+//	30-Oct-25		D. Gonzales		Added header guards shown in class
 
-#pragma once
+#ifndef _REALESTATE_H_
+#define _REALESTATE_H_
 
 // Defining some constants needed for the structures and functions
-#define MAX_STR 255
 #define NUM_APARTMENTS 5
 #define NUM_TOWNHOUSES 5
 #define NUM_SEMIDETACHED_HOUSES 5
@@ -46,5 +47,8 @@ struct RealEstateCompany {
 
 // Extracts data from the file names provided for each property type and assigns those 
 // values to the features of each property in the structure of Real Estate Company.
-int ExtractDataFromFile(struct RealEstateCompany* realEstate, const char* apartmentFile, 
-						const char* townhouseFile, const char* semiDetachedHouseFile);
+int ExtractDataFromFile(struct RealEstateCompany* realEstate, char apartmentFilename[],
+						char townhouseFilename[], char semiDetachedHouseFilename[]);
+void utilClearInputBuffer();
+
+#endif
