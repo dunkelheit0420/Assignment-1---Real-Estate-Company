@@ -1,4 +1,4 @@
-# SEP101 – Assignment 1: Real Estate Company
+# Real Estate Company
 
 ## 📌 Business Case
 A real estate company invests in three types of properties:  
