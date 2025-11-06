@@ -8,21 +8,15 @@
 //	Task Log
 //	22-Oct-25		D. Gonzales		Created Townhouses.h file, finished the structure
 //	30-Oct-25		D. Gonzales		Added header guards shown in class
+//	06-Nov-25		D. Gonzales		Added Property structure
 
 #ifndef _TOWNHOUSES_H_
 #define _TOWNHOUSES_H_
 
-#define MAX_STR 255
+#include "Property.h"
 
 struct Townhouse {
-	char address[MAX_STR];
-	int numRooms;
-	int numBathrooms;
-	double purchasePrice;
-	double monthlyRent;
-	double monthlyUtilities;
-	double monthlyCondoFees;
-	double monthlyPropertyTax;
+	struct Property property[NUM_TOWNHOUSES];
 	double monthlyEarnings;
 	double annualROI;
 	double currentValue;
