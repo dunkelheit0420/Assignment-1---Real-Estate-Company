@@ -12,6 +12,7 @@
 //	25-Oct-25	D. Gonzales		Fixed the ExtractDataFromFile function
 //	30-Oct-25	D. Gonzales		Started PrintReport function
 //	06-Nov-25	D. Gonzales		Finished the PrintReport function
+//  11-Nov-25   E. Karaman      Added function DeterminePerformance
 
 #define _CRT_SECURE_NO_WARNINGS
 
@@ -88,3 +89,40 @@ void PrintReport(struct RealEstateCompany realEstate) {
 		realEstate.semiDetachedHouse.monthlyEarnings, realEstate.semiDetachedHouse.annualROI, realEstate.semiDetachedHouse.currentValue, realEstate.semiDetachedHouse.capitalGains);
 }
 
+void DeterminePerformance(struct RealEstateCompany* realEstate) {
+	// Apartments
+	realEstate->apartment.monthlyEarnings = 0;
+	for (int i = 0; i < NUM_APARTMENTS; ++i) {
+		realEstate->apartment.monthlyEarnings +=
+			realEstate->apartment.property[i].monthlyRent -
+			realEstate->apartment.property[i].monthlyCondoFees;
+	}
+	realEstate->apartment.annualROI = CalculateROI(&realEstate->apartment, NUM_APARTMENTS);
+	realEstate->apartment.currentValue = CalculateCurrentValue(&realEstate->apartment, NUM_APARTMENTS);
+	realEstate->apartment.capitalGains = CalculateCapitalGains(&realEstate->apartment, NUM_APARTMENTS);
+
+	// Townhouses
+	realEstate->townhouse.monthlyEarnings = 0;
+	for (int i = 0; i < NUM_TOWNHOUSES; ++i) {
+		realEstate->townhouse.monthlyEarnings +=
+			realEstate->townhouse.property[i].monthlyRent -
+			realEstate->townhouse.property[i].monthlyCondoFees -
+			realEstate->townhouse.property[i].monthlyUtilities -
+			realEstate->townhouse.property[i].monthlyPropertyTax;
+	}
+	realEstate->townhouse.annualROI = CalculateROI(&realEstate->townhouse, NUM_TOWNHOUSES);
+	realEstate->townhouse.currentValue = CalculateCurrentValue(&realEstate->townhouse, NUM_TOWNHOUSES);
+	realEstate->townhouse.capitalGains = CalculateCapitalGains(&realEstate->townhouse, NUM_TOWNHOUSES);
+
+	// Semi-Detached Houses
+	realEstate->semiDetachedHouse.monthlyEarnings = 0;
+	for (int i = 0; i < NUM_SEMIDETACHED_HOUSES; ++i) {
+		realEstate->semiDetachedHouse.monthlyEarnings +=
+			realEstate->semiDetachedHouse.property[i].monthlyRent -
+			realEstate->semiDetachedHouse.property[i].monthlyUtilities -
+			realEstate->semiDetachedHouse.property[i].monthlyPropertyTax;
+	}
+	realEstate->semiDetachedHouse.annualROI = CalculateROI(&realEstate->semiDetachedHouse, NUM_SEMIDETACHED_HOUSES);
+	realEstate->semiDetachedHouse.currentValue = CalculateCurrentValue(&realEstate->semiDetachedHouse, NUM_SEMIDETACHED_HOUSES);
+	realEstate->semiDetachedHouse.capitalGains = CalculateCapitalGains(&realEstate->semiDetachedHouse, NUM_SEMIDETACHED_HOUSES);
+}

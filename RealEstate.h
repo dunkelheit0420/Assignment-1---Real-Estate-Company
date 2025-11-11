@@ -1,7 +1,7 @@
 //	SEP101 - ASSIGNMENT 1
 //	RealEstate.h - header file for the real estate company
 
-//	Daryl Gonzales					Shay Symonnette						
+//	Daryl Gonzales					Shay Symonnette		          Yevhenii Karaman (Eugene)				
 //	dgonzales12@myseneca.ca			
 //	111341251						
 
@@ -14,6 +14,7 @@
 //	25-Oct-25		D. Gonzales		Added some comments for clarity, now that the extract from file function is fixed.
 //	30-Oct-25		D. Gonzales		Added header guards shown in class
 //	06-Nov-25		D. Gonzales		Added the real estate company's name and address
+//  11-Nov-25       E. Karaman      Added function DeterminePerformance
 
 #ifndef _REALESTATE_H_
 #define _REALESTATE_H_
@@ -57,5 +58,11 @@ struct RealEstateCompany {
 int ExtractDataFromFile(struct RealEstateCompany* realEstate, char apartmentFilename[],
 	char townhouseFilename[], char semiDetachedHouseFilename[]);
 void PrintReport(struct RealEstateCompany realEstate);
+void DeterminePerformance(struct RealEstateCompany* realEstate);
+
+// Shay's functions for calculating ROI, current value, and capital gains
+double CalculateROI(void* propertyType, int numProperties);
+double CalculateCurrentValue(void* propertyType, int numProperties);
+double CalculateCapitalGains(void* propertyType, int numProperties);
 
 #endif

@@ -13,6 +13,7 @@
 //	25-Oct-25	All members		Meeting about the project at 18:00 EST
 //	30-Oct-25	D. Gonzales		Added validation for opening the txt files
 //	06-Nov-25	D. Gonzales		Added initialization for the real estate company's name and address
+//  11-Nov-25   E. Karaman      Added function call to DeterminePerformance
 
 #define _CRT_SECURE_NO_WARNINGS
 #include "RealEstate.h"
@@ -35,6 +36,7 @@ int main(void) {
 	// Validation for opening the txt files
 	if (retVal > 0) {
 		PrintReport(realEstate);
+		DeterminePerformance(&realEstate); 
 	}
 	else printf("ERROR: Something went wrong with extracting the files, please check the filenames and try again.\n");
 	return;
