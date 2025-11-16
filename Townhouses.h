@@ -1,9 +1,9 @@
 //	SEP101 - ASSIGNMENT 1
 //	Townhouses.h - header file for the townhouses of the real estate company
 
-//	Daryl Gonzales					Shay Symonnette
-//	dgonzales12@myseneca.ca			
-//	111341251						
+//	Daryl Gonzales					Shay Symonette						Yevhenii Karaman (Eugene)
+//	dgonzales12@myseneca.ca												ykaraman1@myseneca.ca
+//	111341251															110047255						
 
 //	Task Log
 //	22-Oct-25		D. Gonzales		Created Townhouses.h file, finished the structure
@@ -17,10 +17,11 @@
 
 struct Townhouse {
 	struct Property property[NUM_TOWNHOUSES];
-	double monthlyEarnings;
-	double annualROI;
-	double currentValue;
-	double capitalGains;
+	double totalMonthlyEarnings;
+	double totalAnnualROI;
+	double averageAnnualROI;
+	double totalCurrentValue;
+	double totalCapitalGains;
 };
 
 #endif

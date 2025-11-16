@@ -1,9 +1,9 @@
 //	SEP101 - ASSIGNMENT 1
 //	RealEstateMain.c - main program for the real estate company
 
-//	Daryl Gonzales					Shay Symonnette	                  Yevhenii Karaman (Eugene)
-//	dgonzales12@myseneca.ca			
-//	111341251						
+//	Daryl Gonzales					Shay Symonette						Yevhenii Karaman (Eugene)
+//	dgonzales12@myseneca.ca												ykaraman1@myseneca.ca
+//	111341251															110047255
 
 //	Task Log
 //	19-Oct-25	D. Gonzales		Created RealEstateMain.c file
@@ -22,9 +22,7 @@ int main(void) {
 
 	int retVal = 0;
 
-	// This sets all of the value to zero at the beginning by default which helps when dealing with the fact 
-	// that realEstate -> apartment -> property -> monthlyUtilities and monthlyPropertyTax do not exist and 
-	// should set to zero. Same thing for realEstate -> semiDetachedHouse -> property -> monthlyCondoFees.
+	// This sets all of the value to zero at the beginning by default which helps with calculations.
 	struct RealEstateCompany realEstate = { 0 };
 
 	strcpy(realEstate.name, REAL_ESTATE_COMPANY_NAME);
@@ -35,11 +33,11 @@ int main(void) {
 
 	// Validation for opening the txt files
 	if (retVal > 0) {
+		DeterminePerformance(&realEstate);
 		PrintReport(realEstate);
-		DeterminePerformance(&realEstate); 
 	}
 	else printf("ERROR: Something went wrong with extracting the files, please check the filenames and try again.\n");
-	return;
+	return retVal;
 }
 
 /*

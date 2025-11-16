@@ -17,10 +17,11 @@
 
 struct Apartment {
 	struct Property property[NUM_APARTMENTS];
-	double monthlyEarnings;
-	double annualROI;
-	double currentValue;
-	double capitalGains;
+	double totalMonthlyEarnings;
+	double totalAnnualROI;
+	double averageAnnualROI;
+	double totalCurrentValue;
+	double totalCapitalGains;
 };
 
 #endif

@@ -1,10 +1,9 @@
 //	SEP101 - ASSIGNMENT 1
 //	RealEstate.h - header file for the real estate company
 
-//	Daryl Gonzales					Shay Symonnette		          Yevhenii Karaman (Eugene)				
-//	dgonzales12@myseneca.ca			
-//	111341251						
-
+//	Daryl Gonzales					Shay Symonette						Yevhenii Karaman (Eugene)
+//	dgonzales12@myseneca.ca												ykaraman1@myseneca.ca
+//	111341251															110047255
 //	Task Log
 //	18-Oct-25		D. Gonzales		Created RealEstate.h file
 //	19-Oct-25		D. Gonzales		Defined some constants, wrote struct RealEstate, and struct Apartments
@@ -23,6 +22,7 @@
 #define NUM_APARTMENTS 5
 #define NUM_TOWNHOUSES 5
 #define NUM_SEMIDETACHED_HOUSES 5
+#define INTEREST_RATE 0.05
 
 // Defining the txt files where we are getting our information from
 #define APARTMENT_FILE "Apartments.txt"
@@ -41,6 +41,7 @@
 #include "Apartments.h"
 #include "SemiDetachedHouses.h"
 #include "Townhouses.h"
+#include "Property.h"
 
 // Structure of all the property types that the Real Estate Company owns
 struct RealEstateCompany {
@@ -57,12 +58,7 @@ struct RealEstateCompany {
 // values to the features of each property in the structure of Real Estate Company.
 int ExtractDataFromFile(struct RealEstateCompany* realEstate, char apartmentFilename[],
 	char townhouseFilename[], char semiDetachedHouseFilename[]);
-void PrintReport(struct RealEstateCompany realEstate);
 void DeterminePerformance(struct RealEstateCompany* realEstate);
-
-// Shay's functions for calculating ROI, current value, and capital gains
-double CalculateROI(void* propertyType, int numProperties);
-double CalculateCurrentValue(void* propertyType, int numProperties);
-double CalculateCapitalGains(void* propertyType, int numProperties);
+void PrintReport(struct RealEstateCompany realEstate);
 
 #endif
