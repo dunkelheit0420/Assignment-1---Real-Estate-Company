@@ -1,9 +1,9 @@
 //	SEP101 - ASSIGNMENT 1
 //	Apartments.h - header file for the apartments of the real estate company
 
-//	Daryl Gonzales					Shay Symonnette
-//	dgonzales12@myseneca.ca			
-//	111341251						
+//	Daryl Gonzales					Shay Symonette					Yevhenii Karaman (Eugene)
+//	dgonzales12@myseneca.ca			ssymonette@myseneca.ca			ykaraman1@myseneca.ca
+//	111341251						148719248						110047255				
 
 //	Task Log
 //	22-Oct-25		D. Gonzales		Created Apartments.h file, finished the structure

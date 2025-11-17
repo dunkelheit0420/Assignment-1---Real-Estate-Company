@@ -1,9 +1,10 @@
 //	SEP101 - ASSIGNMENT 1
 //	RealEstate.h - header file for the real estate company
 
-//	Daryl Gonzales					Shay Symonette						Yevhenii Karaman (Eugene)
-//	dgonzales12@myseneca.ca												ykaraman1@myseneca.ca
-//	111341251															110047255
+//	Daryl Gonzales					Shay Symonette					Yevhenii Karaman (Eugene)
+//	dgonzales12@myseneca.ca			ssymonette@myseneca.ca			ykaraman1@myseneca.ca
+//	111341251						148719248						110047255			
+	
 //	Task Log
 //	18-Oct-25		D. Gonzales		Created RealEstate.h file
 //	19-Oct-25		D. Gonzales		Defined some constants, wrote struct RealEstate, and struct Apartments

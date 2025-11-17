@@ -1,9 +1,9 @@
 //	SEP101 - ASSIGNMENT 1
 //	Townhouses.h - header file for the townhouses of the real estate company
 
-//	Daryl Gonzales					Shay Symonette						Yevhenii Karaman (Eugene)
-//	dgonzales12@myseneca.ca												ykaraman1@myseneca.ca
-//	111341251															110047255						
+//	Daryl Gonzales					Shay Symonette					Yevhenii Karaman (Eugene)
+//	dgonzales12@myseneca.ca			ssymonette@myseneca.ca			ykaraman1@myseneca.ca
+//	111341251						148719248						110047255									
 
 //	Task Log
 //	22-Oct-25		D. Gonzales		Created Townhouses.h file, finished the structure

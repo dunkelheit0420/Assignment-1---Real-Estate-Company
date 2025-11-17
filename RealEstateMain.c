@@ -1,9 +1,9 @@
 //	SEP101 - ASSIGNMENT 1
 //	RealEstateMain.c - main program for the real estate company
 
-//	Daryl Gonzales					Shay Symonette						Yevhenii Karaman (Eugene)
-//	dgonzales12@myseneca.ca												ykaraman1@myseneca.ca
-//	111341251															110047255
+//	Daryl Gonzales					Shay Symonette					Yevhenii Karaman (Eugene)
+//	dgonzales12@myseneca.ca			ssymonette@myseneca.ca			ykaraman1@myseneca.ca
+//	111341251						148719248						110047255				
 
 //	Task Log
 //	19-Oct-25	D. Gonzales		Created RealEstateMain.c file

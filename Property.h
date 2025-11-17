@@ -1,9 +1,9 @@
 //	SEP101 - ASSIGNMENT 1
 //	Property.h - header file for all of the units within each Property type
 
-//	Daryl Gonzales					Shay Symonette						Yevhenii Karaman (Eugene)
-//	dgonzales12@myseneca.ca												ykaraman1@myseneca.ca
-//	111341251															110047255					
+//	Daryl Gonzales					Shay Symonette					Yevhenii Karaman (Eugene)
+//	dgonzales12@myseneca.ca			ssymonette@myseneca.ca			ykaraman1@myseneca.ca
+//	111341251						148719248						110047255							
 
 //	Task Log
 //	06-Nov-25		D. Gonzales		Created and finished Property.h structure after realizing error
